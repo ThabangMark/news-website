@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - BW NewsHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/api/placeholder/200/80" alt="BW NewsHub Logo" class="logo">
+            <div class="site-title">
+                <h1>BW NewsHub</h1>
+                <p class="tagline">Your Trusted Source for Botswana News</p>
+            </div>
+        </div>
+        <nav id="main-nav">
+            <div class="mobile-menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="opinion.html">Opinion</a></li>
+                <li class="active"><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="feedback-container">
+            <div class="feedback-header">
+                <h2>Your Feedback Matters</h2>
+                <p>Help us improve our website and news coverage</p>
+            </div>
+            
+            <form class="feedback-form" id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+267 XXXXXXXX">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>How did you hear about us?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="source" value="social-media">
+                            Social Media
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="source" value="search-engine">
+                            Search Engine
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="source" value="friend">
+                            Friend/Family
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="source" value="other">
+                            Other
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Rate your experience with our website</label>
+                    <div class="star-rating" id="ratingStars">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" class="fas fa-star"></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" class="fas fa-star"></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" class="fas fa-star"></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" class="fas fa-star"></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" class="fas fa-star"></label>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label>What topics would you like to see more of?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="topics" value="politics">
+                            <span class="checkmark"></span>
+                            Politics
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="topics" value="economy">
+                            <span class="checkmark"></span>
+                            Economy
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="topics" value="sports">
+                            <span class="checkmark"></span>
+                            Sports
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="topics" value="entertainment">
+                            <span class="checkmark"></span>
+                            Entertainment
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="topics" value="tech">
+                            <span class="checkmark"></span>
+                            Technology
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="topics" value="health">
+                            <span class="checkmark"></span>
+                            Health
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <span class="checkmark"></span>
+                        Subscribe to our newsletter for updates
+                    </label>
+                </div>
+                
+                <div class="form-group full-width">
+                    <button type="submit" class="auth-btn">Submit Feedback</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About BW NewsHub</h3>
+                <p>Your trusted source for the latest and most accurate news coverage across Botswana. Delivering timely updates on politics, business, sports, entertainment, and more.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="politics.html">Politics</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Plot 123, CBD, Gaborone, Botswana</p>
+                <p><i class="fas fa-phone"></i> +267 71669973</p>
+                <p><i class="fas fa-envelope"></i> todirile12@gmail.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 BW NewsHub. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

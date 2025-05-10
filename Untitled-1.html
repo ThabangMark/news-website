@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - BW NewsHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/api/placeholder/200/80" alt="BW NewsHub Logo" class="logo">
+            <div class="site-title">
+                <h1>BW NewsHub</h1>
+                <p class="tagline">Your Trusted Source for Botswana News</p>
+            </div>
+        </div>
+        <nav id="main-nav">
+            <div class="mobile-menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="entertainment.html">Entertainment</a></li>
+                <li><a href="opinion.html">Opinion</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <div class="auth-header">
+                <h2>Create Your Account</h2>
+                <p>Join BW NewsHub for personalized news and updates</p>
+            </div>
+            
+            <form class="auth-form" id="signupForm">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <small>Must be at least 8 characters long and include a number</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>News Preferences (Optional)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="preferences" value="politics">
+                            <span class="checkmark"></span>
+                            Politics
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="preferences" value="business">
+                            <span class="checkmark"></span>
+                            Business
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="preferences" value="sports">
+                            <span class="checkmark"></span>
+                            Sports
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="preferences" value="entertainment">
+                            <span class="checkmark"></span>
+                            Entertainment
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="auth-btn">Create Account</button>
+                
+                <div class="auth-links">
+                    <p>Already have an account? <a href="login.html">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About BW NewsHub</h3>
+                <p>Your trusted source for the latest and most accurate news coverage across Botswana. Delivering timely updates on politics, business, sports, entertainment, and more.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="politics.html">Politics</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Plot 123, CBD, Gaborone, Botswana</p>
+                <p><i class="fas fa-phone"></i> +267 71669973</p>
+                <p><i class="fas fa-envelope"></i> todirile12@gmail.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 BW NewsHub. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
